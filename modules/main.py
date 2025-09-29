@@ -581,9 +581,9 @@ async def handle_quality(client, callback_query):
             globals.res = '1920x1080'
             await editable.edit(f"✅ Video Quality set {globals.quality} !", reply_markup=keyboard)
         else:
-            globals.raw_text2 = '720'
+            globals.raw_text2 = '480'
             globals.quality = f"{globals.raw_text2}p"
-            globals.res = '1280x720'
+            globals.res = '854x480'
             await editable.edit(f"✅ Video Quality set {globals.quality} as Default !", reply_markup=keyboard)
             
     except Exception as e:
@@ -629,10 +629,9 @@ async def credit(client, callback_query):
             globals.cptoken = "cptoken"
             globals.pwtoken = "pwtoken"
             globals.vidwatermark = '/d'
-            globals.raw_text2 = '720'
-            globals.quality = '720p'
-            globals.res = '1280x720'
-
+            globals.raw_text2 = '480'
+            globals.quality = '480p'
+            globals.res = '854x480'
             globals.topic = '/d'
             await editable.edit(f"✅ Settings reset as default !", reply_markup=keyboard)
 
